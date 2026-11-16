@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Emberforge</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #14100c; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; }
+  #game { display: block; background: #14100c; }
+  #status {
+    position: fixed; left: 12px; bottom: 8px; color: #b8a88f;
+    font: 13px system-ui, sans-serif;
+  }
+</style>
+</head>
+<body>
+<canvas id="game" width="1280" height="720"></canvas>
+<div id="status" aria-live="polite">Emberforge — pick an order, strike true, quench white-hot.</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
